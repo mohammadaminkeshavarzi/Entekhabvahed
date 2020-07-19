@@ -1,0 +1,92 @@
+﻿<Window x:Class="Entekhab_Vahed_Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Entekhab_Vahed_Wpf"
+        mc:Ignorable="d"
+        Title="سیستم انتخاب واحد" Height="630" Width="730" Background="#FFB3B3B3" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Closing="Window_Closing">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF20C3FF" Offset="0.603"/>
+                <GradientStop Color="#FF3A7388" Offset="0.882"/>
+                <GradientStop Color="#FF23B9F1" Offset="0.948"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="btnChU"  Width="100" Height="100" Content="انتخاب واحد" Margin="312,244,301.6,246.4" Background="#FF21BF78" Foreground="White" BorderBrush="Black" RenderTransformOrigin="0.376,0.036" FontWeight="Bold" FontFamily="IRANSans" FontSize="14" Click="btnChU_Click" >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Ellipse Fill="#FF9C1010"/>
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btnLesson"  Width="100" Height="100" Content="درس" Margin="167,154,446.6,336.4" Background="#FF21BF78" Foreground="White" BorderBrush="Black" RenderTransformOrigin="0.376,0.036" FontFamily="IRANSans" FontSize="14" FontWeight="Bold" Click="btnLesson_Click" >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Ellipse Fill="#FF171882"/>
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btnStudent"  Width="100" Height="100" Content="دانشجو" Margin="312,79,301.6,411.4" Background="#FF21BF78" Foreground="White" BorderBrush="Black" RenderTransformOrigin="0.376,0.036" FontFamily="IRANSans" FontSize="14" FontWeight="Bold" Click="btnStudent_Click" >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Ellipse Fill="#FF207931"/>
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btnProff"  Width="100" Height="100" Content="استاد" Margin="461,154,152.6,336.4" Background="#FFC3D120" Foreground="White" BorderBrush="Black" RenderTransformOrigin="0.376,0.036" FontWeight="Bold" FontFamily="IRANSans" FontSize="14" Click="btnProff_Click" >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Ellipse Fill="#FF7D931D"/>
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btnClass"  Width="100" Height="100" Content="کلاس" Margin="167,335,446.6,155.4" Background="#FF21BF78" Foreground="White" BorderBrush="Black" RenderTransformOrigin="0.376,0.036" FontWeight="Bold" FontFamily="IRANSans" FontSize="14" Click="btnClass_Click" >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Ellipse Fill="#FF521D52"/>
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btnField"  Width="100" Height="100" Content="ثبت رشته ها" Margin="461,335,152.6,155.4" Background="#FF21BF78" Foreground="White" BorderBrush="Black" RenderTransformOrigin="0.376,0.036" FontWeight="Bold" FontFamily="IRANSans" FontSize="14" Click="btnField_Click" >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Ellipse Fill="#FF2F2A2A"/>
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="btnScore"  Width="100" Height="100" Content="ثبت نمرات" Margin="312,409,301.6,81.4" Background="#FF21BF78" Foreground="White" BorderBrush="Black" RenderTransformOrigin="0.376,0.036" FontWeight="Bold" FontFamily="IRANSans" FontSize="14" Click="btnScore_Click" >
+            <Button.Template>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Grid>
+                        <Ellipse Fill="#FF1D4F4F"/>
+                        <ContentPresenter Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Label x:Name="label" Content="سیستم انتخاب واحد" HorizontalAlignment="Right" Margin="0,10,-0.4,0" VerticalAlignment="Top" Width="176" FontFamily="IRANSans" FontSize="18" Foreground="#FFCE2323" FontWeight="Bold"/>
+    </Grid>
+</Window>

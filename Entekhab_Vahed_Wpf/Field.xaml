@@ -1,0 +1,19 @@
+﻿<Window x:Class="Entekhab_Vahed_Wpf.Field"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Entekhab_Vahed_Wpf"
+        mc:Ignorable="d"
+        Title="رشته ها" Height="350" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Grid Background="#FF71B1C0" FlowDirection="RightToLeft">
+        <Label x:Name="label" Content="کد رشته :" Margin="12,20,0,0" VerticalAlignment="Top" Width="94" FontFamily="IRANSans" FontSize="13" FlowDirection="RightToLeft" HorizontalAlignment="Left"/>
+        <TextBox x:Name="txtCodeF" HorizontalAlignment="Left" Height="26" Margin="82,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="293" HorizontalContentAlignment="Stretch" IsEnabled="False" TextAlignment="Center"/>
+        <Label x:Name="label_Copy" Content="نام رشته :" Margin="12,64,0,0" VerticalAlignment="Top" Width="94" FontFamily="IRANSans" FontSize="13" FlowDirection="RightToLeft" HorizontalAlignment="Left"/>
+        <TextBox x:Name="txtNameF" HorizontalAlignment="Left" Height="26" Margin="82,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="293" HorizontalContentAlignment="Stretch"/>
+        <Button x:Name="btnSaveF" Content="ثبت رشته" HorizontalAlignment="Left" Margin="10,99,0,0" VerticalAlignment="Top" Width="365" Height="38" Background="#FF29863E" Foreground="White" FontSize="14" FontFamily="IRANSans" FontStyle="Oblique" FontStretch="Expanded" FontWeight="Bold" Click="btnSaveF_Click"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,142,0,0" VerticalAlignment="Top" Height="126" Width="365"/>
+        <Button x:Name="btnDellF" Content="حذف رشته" HorizontalAlignment="Left" Margin="10,273,0,0" VerticalAlignment="Top" Width="365" Height="38" BorderBrush="#FFB63939" Background="#FF861414" Foreground="White" FontSize="14" FontFamily="IRANSans" Click="btnDellF_Click"/>
+
+    </Grid>
+</Window>

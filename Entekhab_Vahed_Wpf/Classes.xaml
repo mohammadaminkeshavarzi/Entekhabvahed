@@ -1,0 +1,31 @@
+﻿<Window x:Class="Entekhab_Vahed_Wpf.Classes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Entekhab_Vahed_Wpf"
+        mc:Ignorable="d"
+        Title="کلاس ها" Height="550" Width="600" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Grid Background="#FF71B1C0" FlowDirection="RightToLeft">
+        <Label x:Name="label" Content="کد کلاس :" Margin="18,20,0,0" VerticalAlignment="Top" Width="94" FontFamily="IRANSans" FontSize="13" FlowDirection="RightToLeft" HorizontalAlignment="Left"/>
+        <TextBox x:Name="txtCode" HorizontalAlignment="Left" Height="26" Margin="112,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" HorizontalContentAlignment="Stretch" IsEnabled="False" TextAlignment="Center"/>
+        <Button x:Name="btnSave" Content="ثبت کلاس" HorizontalAlignment="Left" Margin="17,211,0,0" VerticalAlignment="Top" Width="559" Height="38" Background="#FF29863E" Foreground="White" FontSize="14" FontFamily="IRANSans" FontStyle="Oblique" FontStretch="Expanded" FontWeight="Bold" Click="btnSave_Click"/>
+        <Label x:Name="label_Copy" Content="نام کلاس :" Margin="18,64,0,0" VerticalAlignment="Top" Width="94" FontFamily="IRANSans" FontSize="13" FlowDirection="RightToLeft" HorizontalAlignment="Left"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Height="26" Margin="112,65,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" HorizontalContentAlignment="Stretch"/>
+        <Label x:Name="label_Copy4" Content="نام درس :" Margin="299,17,0,0" VerticalAlignment="Top" Width="94" FontFamily="IRANSans" FontSize="13" FlowDirection="RightToLeft" HorizontalAlignment="Left"/>
+        <ComboBox x:Name="cmbLesson" HorizontalAlignment="Left" Margin="398,17,0,0" VerticalAlignment="Top" Width="178" Height="30"/>
+        <Label x:Name="label_Copy5" Content="استاد کلاس :" Margin="299,64,0,0" VerticalAlignment="Top" Width="94" FontFamily="IRANSans" FontSize="13" FlowDirection="RightToLeft" HorizontalAlignment="Left"/>
+        <ComboBox x:Name="cmbProf" HorizontalAlignment="Left" Margin="398,64,0,0" VerticalAlignment="Top" Width="178" Height="30"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="17,254,0,0" VerticalAlignment="Top" Height="214" Width="559"/>
+        <Button x:Name="btnDell" Content="حذف کلاس" HorizontalAlignment="Left" Margin="17,473,0,0" VerticalAlignment="Top" Width="559" Height="38" BorderBrush="#FFB63939" Background="#FF861414" Foreground="White" FontSize="14" FontFamily="IRANSans" Click="btnDell_Click"/>
+        <Label x:Name="label_Copy2" Content="ظرفیت کلاس :" Margin="295,106,0,0" VerticalAlignment="Top" Width="94" FontFamily="IRANSans" FontSize="13" FlowDirection="RightToLeft" HorizontalAlignment="Left"/>
+        <TextBox x:Name="txtCapecity" HorizontalAlignment="Left" Height="26" Margin="398,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" HorizontalContentAlignment="Stretch"/>
+        <Label x:Name="label_Copy3" Content="تاریخ برگزاری  :" Margin="18,106,0,0" VerticalAlignment="Top" Width="94" FontFamily="IRANSans" FontSize="13" FlowDirection="RightToLeft" HorizontalAlignment="Left"/>
+        <TextBox x:Name="txtDate" HorizontalAlignment="Left" Height="26" Margin="112,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" HorizontalContentAlignment="Stretch" Text="1399/05/06"/>
+        <Label x:Name="label_Copy6" Content="ساعت برگزاری  :" Margin="10,149,0,0" VerticalAlignment="Top" Width="94" FontFamily="IRANSans" FontSize="13" FlowDirection="RightToLeft" HorizontalAlignment="Left"/>
+        <TextBox x:Name="txtTime" HorizontalAlignment="Left" Height="26" Margin="112,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" HorizontalContentAlignment="Stretch" Text="12:20"/>
+        <Label x:Name="label_Copy7" Content="محل برگزاری :" Margin="299,149,0,0" VerticalAlignment="Top" Width="94" FontFamily="IRANSans" FontSize="13" FlowDirection="RightToLeft" HorizontalAlignment="Left"/>
+        <TextBox x:Name="txtMakan" HorizontalAlignment="Left" Height="26" Margin="398,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="178" HorizontalContentAlignment="Stretch"/>
+
+    </Grid>
+</Window>
